@@ -7,7 +7,7 @@ export const HomeContainer =() =>{
     return(
       <>
         <div>
-          <div className="w-screen h-160 bg-[#fff9f1] bg-cover bg-center bg-no-repeat"
+          <div className="w-screen h-210 bg-[#fff9f1] bg-cover bg-center bg-no-repeat"
            style={{
                       backgroundImage: `url(${herobgimage})`
                     }}
