@@ -5,6 +5,9 @@ import './App.css'
 import logo from "./image/logo.png";
 import { HomeContainer } from './components/Homecontainer';
 import { TopBare } from './components/Topbare';
+import { Sponcered } from './components/sponcered';
+import { Categories} from './components/catogaries';
+import { FeaturedCourse } from './components/Featuredcourse';
 
 function App() {
 
@@ -17,8 +20,18 @@ function App() {
       <div>
         <HomeContainer />
       </div>
+      <div>
+        <Sponcered />
+      </div>
+      <div>
+      <Categories />
+      </div>
+      <div>
+        <FeaturedCourse />
+      </div>
     </>
   )
 }
+
 
 export default App

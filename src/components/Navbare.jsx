@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   return (
   
-     <nav className="fixed sticky top-0 flex items-center justify-between px-4 md:px-8 py-0  shadow-sm
+     <nav className="fixed sticky top-0 z-0 flex items-center justify-between px-4 md:px-8 py-0  shadow-sm
      backdrop-blur-md bg-white/30  font-sans h-[80px] relative">
       
       {/* Logo Section */}
