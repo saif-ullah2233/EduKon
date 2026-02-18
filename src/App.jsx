@@ -8,6 +8,10 @@ import { TopBare } from './components/Topbare';
 import { Sponcered } from './components/sponcered';
 import { Categories} from './components/catogaries';
 import { FeaturedCourse } from './components/Featuredcourse';
+import { Aboutcourses } from './components/Aboutcourses';
+import Instructors from './components/Instructures';
+import { StudentFeedback } from './components/Studentfeedback';
+import { ResourceLibrary } from './components/Resourcellibrary';
 
 function App() {
 
@@ -29,6 +33,11 @@ function App() {
       <div>
         <FeaturedCourse />
       </div>
+      <div>
+        <Aboutcourses />
+      </div>
+     <StudentFeedback />
+     <ResourceLibrary />
     </>
   )
 }
