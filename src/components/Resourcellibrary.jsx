@@ -5,7 +5,8 @@ import { User, Calendar, ExternalLink, MessageSquare } from 'lucide-react';
 import div1image from '../image/div2.png';
 import seconddivimage from '../image/div22ndimage.png';
 import thirdimage from '../image/div23rdimage.png';
-
+import mainimage from '../image/menimage.png';
+import donaldlogan from '../image/Donaldlogan.png';
 export const ResourceLibrary = () => {
   // Centralized data updated with your imported images
   const articles = [

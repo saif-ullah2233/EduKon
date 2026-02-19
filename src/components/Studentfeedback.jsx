@@ -1,6 +1,8 @@
 import React from "react";
 // Successfully using your local import
 import newimage from "../image/newimage.png";
+import mainimage from '../image/menimage.png';
+import donaldlogan from '../image/Donaldlogan.png';
 
 export const StudentFeedback = () => {
   const testimonials = [
@@ -9,14 +11,14 @@ export const StudentFeedback = () => {
       role: "UX designer",
       content: "Rapidiously build collaboration anden deas sharing viaing and bleedng edgeing nterfaces fnergstcally plagiarize teams anbuilding paradgms whereas goingi forward process and monetze",
       rating: 5,
-      image: "https://via.placeholder.com/50" 
+      image: donaldlogan 
     },
     {
       name: "Madley Pondor",
       role: "UX designer",
       content: "Rapidiously build collaboration anden deas sharing viaing and bleedng edgeing nterfaces fnergstcally plagiarize teams anbuilding paradgms whereas goingi forward process and monetze",
       rating: 5,
-      image: "https://via.placeholder.com/50" 
+      image: mainimage 
     }
   ];
 
@@ -52,15 +54,7 @@ export const StudentFeedback = () => {
             z-index: 1;
           }
 
-          .sub-title {
-            color: #ff6633;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 14px;
-            font-weight: 700;
-            margin-bottom: 12px;
-            display: block;
-          }
+          
 
           .main-title {
             font-size: 36px;
@@ -77,14 +71,14 @@ export const StudentFeedback = () => {
             align-items: flex-start;
           }
 
-          /* Left Side: Using imported newimage */
+          /* Left Side Image Container */
           .video-wrapper {
-            flex: 1.2;
+            flex: 1;
             position: relative;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-            height: 480px;
+            height: 390px;
             background-color: #f0f0f0;
           }
 
@@ -113,11 +107,6 @@ export const StudentFeedback = () => {
             z-index: 2;
           }
 
-          .play-button:hover {
-            transform: translate(-50%, -50%) scale(1.08);
-            box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.3);
-          }
-
           .play-icon {
             width: 0;
             height: 0;
@@ -127,7 +116,7 @@ export const StudentFeedback = () => {
             margin-left: 6px;
           }
 
-          /* Right Side: Testimonials */
+          /* Right Side: Container kept same, Text sizes increased */
           .testimonial-list {
             flex: 1;
             display: flex;
@@ -142,10 +131,6 @@ export const StudentFeedback = () => {
             box-shadow: 0 4px 20px rgba(0,0,0,0.03);
             border: 1px solid #f2f2f2;
             transition: transform 0.3s ease;
-          }
-
-          .testimonial-card:hover {
-            transform: translateY(-5px);
           }
 
           .card-header {
@@ -173,13 +158,13 @@ export const StudentFeedback = () => {
 
           .user-name {
             font-weight: 700;
-            font-size: 18px;
+            font-size: 22px; /* Increased */
             color: #1a1a1a;
             margin: 0;
           }
 
           .user-role {
-            font-size: 13px;
+            font-size: 16px; /* Increased */
             color: #777;
             margin-top: 2px;
             display: block;
@@ -187,25 +172,24 @@ export const StudentFeedback = () => {
 
           .stars {
             color: #ff6633;
-            font-size: 14px;
+            font-size: 18px; /* Increased */
             letter-spacing: 2px;
           }
 
           .testimonial-text {
             color: #555;
             line-height: 1.8;
-            font-size: 15px;
+            font-size: 19px; /* Increased */
             margin: 0;
           }
 
-          /* Mobile Responsiveness */
           @media (max-width: 992px) {
             .content-container {
               flex-direction: column;
             }
             .video-wrapper {
               width: 100%;
-              height: 380px;
+              height: 300px;
             }
             .testimonial-list {
               width: 100%;
@@ -215,12 +199,11 @@ export const StudentFeedback = () => {
       </style>
 
       <div className="header-group">
-        <span className="sub-title">Loved by 200,000+ Students</span>
-        <h2 className="main-title">Students Community Feedback</h2>
+        <span className="uppercase tracking-[0.4em] text-orange-500 text-xl font-semibold text-center">Loved by 200,000+ Students</span>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center">Students Community Feedback</h2>
       </div>
 
       <div className="content-container">
-        {/* Left Side: Visual Media using newimage */}
         <div className="video-wrapper">
           <img 
             src={newimage} 
@@ -232,7 +215,6 @@ export const StudentFeedback = () => {
           </div>
         </div>
 
-        {/* Right Side: Testimonials */}
         <div className="testimonial-list">
           {testimonials.map((item, index) => (
             <div className="testimonial-card" key={index}>
@@ -254,7 +236,5 @@ export const StudentFeedback = () => {
         </div>
       </div>
     </section>
-        
-        
   );
 };

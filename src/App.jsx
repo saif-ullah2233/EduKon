@@ -12,7 +12,7 @@ import { Aboutcourses } from './components/Aboutcourses';
 import Instructors from './components/Instructures';
 import { StudentFeedback } from './components/Studentfeedback';
 import { ResourceLibrary } from './components/Resourcellibrary';
-
+import { GradientSection } from './components/Achivegoals';
 function App() {
 
  
@@ -36,8 +36,14 @@ function App() {
       <div>
         <Aboutcourses />
       </div>
+      <div>
+        <Instructors />
+      </div>
      <StudentFeedback />
      <ResourceLibrary />
+     <div>
+      <GradientSection />
+     </div>
     </>
   )
 }
